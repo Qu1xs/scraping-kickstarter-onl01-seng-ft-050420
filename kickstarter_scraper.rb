@@ -8,7 +8,9 @@ def create_project_hash
   projects = {}
   
   #iterate through projects
-  kickstarter.css()
+  kickstarter.css(("li.project.grid_4").each {|project|
+    projects[project] = {}})
+  projects
   
   
 end
